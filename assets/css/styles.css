@@ -84,8 +84,8 @@ textarea {
 }
 
 body {
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: var(--body-color); /*was white*/
+  color: var(--white-color); /*was black*/
 }
 
 button {
@@ -143,7 +143,7 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: var(--white-color);
+    background-color: var(--black-color); /*was white*/
     z-index: var(--z-fixed);
     transition: box-shadow .4s;
 }
@@ -157,7 +157,7 @@ img {
 
 
 .nav__logo{
-    color: var(--black-color);
+    color: var(--white-color); /*was black*/
     font-weight: var(--font-semi-bold);
     transition: color .4s;
 }
@@ -196,7 +196,7 @@ img {
 
 .nav__link{
     position: relative;
-    color: var(--black-color);
+    color: var(--white-color); /*was black*/
     font-weight: var(--font-medium);
     transition: color .4s, width .4s;
 }
@@ -277,7 +277,7 @@ img {
 }
 
 .home__link{
-  color: var(--black-color);
+  color: var(--white-color); /*was black*/
   font-size: 1.5rem;
   transition: transform .4s, color .4s;
 }
@@ -308,8 +308,22 @@ img {
   justify-content: center;
   margin-top: 2rem;
 }
-/*=============== BUTTON ===============*/
 
+/*=============== BUTTON ===============*/
+.button{
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--black-color);
+  font-weight: var(--font-medium);
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  transition: box-shadow .4s, color .4s;
+}
+
+.button:hover{
+  box-shadow: 0 8px 24px hsl(52, 100%, 50%, 0.3);
+}
 
 /*=============== ABOUT ===============*/
 
