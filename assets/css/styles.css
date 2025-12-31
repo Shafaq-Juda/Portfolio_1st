@@ -23,6 +23,7 @@
   --hue: 180;
   /* --first-color: hsl(var(--hue), 0%, 48%);  GREY */
   --first-color: hsl(52, 100%, 50%); /* GOLD */
+  --first-color-shadow: hsl(52, 100%, 50%, 0.3);
   --first-color-alt: hsl(var(--hue), 80%, 44%);
   /* --white-color: hsl(var(--hue), 8%, 92%); old */
   --white-color: hsl(0, 0%, 100%);
@@ -237,8 +238,76 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container{
+  row-gap: 4rem;
+  padding-block: 2.5rem 2rem;
+}
 
+.home__content{
+  position: relative;
+  justify-self: center;
+}
 
+.home__image{
+  width: 240px;
+  height: 240px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 5px solid var(--first-color);
+  box-shadow: 0 8px 32px hsl(52, 100%, 50%, 0.3);
+}
+
+/* .home__img{
+  width: 200px;
+  filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, .2));
+} */
+
+.home__social{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -2.5rem;
+  display: grid;
+  align-content: center;
+  row-gap: 1.5rem;
+}
+
+.home__link{
+  color: var(--black-color);
+  font-size: 1.5rem;
+  transition: transform .4s, color .4s;
+}
+
+.home__link:hover{
+  transform: translateY(-.25rem);
+  color: var(--first-color);
+}
+
+.home__data{
+  text-align: center;
+  row-gap: 1rem;
+}
+
+.home__subtitle span{
+  color: var(--first-color);
+}
+
+.home__title{
+  font-size: var(--bigger-font-size);
+  color: var(--first-color);
+}
+
+.home__buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
 /*=============== BUTTON ===============*/
 
 
