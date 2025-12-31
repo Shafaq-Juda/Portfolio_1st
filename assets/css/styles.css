@@ -56,7 +56,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
-    --bigger-font-size: 3rem;
+    --bigger-font-size: 2.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
