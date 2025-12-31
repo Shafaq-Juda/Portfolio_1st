@@ -366,8 +366,26 @@ img {
   }
 }
 
-/* For medium devices */
+/* For medium devices */ 
+@media screen and (min-width: 540px) {
+    .home__container{
+      grid-template-columns: 400px;
+      justify-content: center;
+    }
+}
 
+@media screen and (min-width: 768px) {
+  .home__container{
+    grid-template-columns: repeat(2, 350px);
+    align-items: center;
+  } 
+  .home__data{
+    text-align: initial;
+  } 
+  .home__buttons{
+    justify-content: initial;
+  }
+}
 
 /* For large devices */
 @media screen and (min-width: 1150px){
