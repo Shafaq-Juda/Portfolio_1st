@@ -143,7 +143,7 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: var(--black-color); /*was white*/
+    background-color: var(--body-color); /*was white then black*/
     z-index: var(--z-fixed);
     transition: box-shadow .4s;
 }
@@ -232,7 +232,9 @@ img {
 }
 
 /* Add shadow header */
-
+.shadow-header{
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .5);
+}
 
 /* Active link */
 
