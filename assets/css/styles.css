@@ -627,6 +627,19 @@ img {
   .about__img{
     width: 350px;
   }
+
+  .projects{
+    padding-block: 8rem 4rem;
+  }
+
+  .projects__container{
+    grid-template-columns: repeat(3, 450px);
+    gap: 3rem 2rem;
+  }
+
+  .projects__data .button{
+    margin-top: 1rem;
+  }
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
