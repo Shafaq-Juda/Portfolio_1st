@@ -439,11 +439,33 @@ img {
   text-align: center;
   padding: 0 1rem;
   border-radius: 1rem;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  transition: opacity .4s; */
+  transition: opacity .4s;
 }
 
+.projects__title{
+  font-size: var(--h3-font-size);
+}
+
+.projects__description{
+  font-size: var(--small-font-size);
+}
+
+.projects__data button{
+  justify-self: center;
+  background-color: hsla(var(--hue), 8%, 8%, .4);
+ margin-top: .5rem; 
+}
+
+.projects__card:hover{
+  box-shadow: 0 8px 16px hsla(var(--hue), 80%, 48%, .2);
+}
+
+.projects__card:hover .projects__data{
+  opacity: 1;
+  pointer-events: initial;
+}
 /*=============== RESUME ===============*/
 
 
