@@ -1,2 +1,2 @@
-# Portfolio_1st
-This is my first portfolio
+# Shafaq Juda
+Welcome to my portfolio
